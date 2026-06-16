@@ -110,9 +110,9 @@ Método de consulta personalizado:
 ## Ejemplo de petición (crear usuario)
 
 ```bash
-curl -X POST http://localhost:8081/api/v1/usuarios \
-  -H "Content-Type: application/json" \
-  -d '{
+POST http://localhost:8081/api/v1/usuarios \
+  "Content-Type: application/json" \
+  '{
     "nombre": "Juan",
     "apellido": "Pérez",
     "emailUsuario": "juan@ejemplo.com",
