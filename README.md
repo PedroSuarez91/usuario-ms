@@ -110,7 +110,7 @@ Método de consulta personalizado:
 ## Ejemplo de petición (crear usuario)
 
 ```bash
-POST http://localhost:8081/api/v1/usuarios \
+POST http://localhost:8081/api/v1/usuarios 
   
   '{
     "nombre": "Juan",
