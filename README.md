@@ -22,12 +22,6 @@ spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=update
 ```
 
-## Ejecución
-
-```bash
-./mvnw spring-boot:run
-```
-
 ## Modelo: `Usuario`
 
 Entidad mapeada a la tabla `usuarios`.
