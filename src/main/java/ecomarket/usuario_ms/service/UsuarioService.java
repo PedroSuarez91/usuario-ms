@@ -27,19 +27,7 @@ public class UsuarioService {
     }
 
     public Usuario findByEmailUsuario(String emailUsuario) {
-        Usuario buscado = usuarioRepository.findByEmailUsuario(emailUsuario).orElse(null);
-        if (buscado == null)
-            return null;
-
-        Usuario dto = new Usuario();
-        dto.setIdUsuario(buscado.getIdUsuario());
-        dto.setNombre(buscado.getNombre());
-        dto.setApellido(buscado.getApellido());
-        dto.setEmailUsuario(buscado.getEmailUsuario());
-        dto.setPassword(buscado.getPassword());
-        dto.setRol(buscado.getRol());
-
-        return dto;
+        return usuarioRepository.findByEmailUsuario(emailUsuario).orElse(null);
     }
 
     public void eliminarUsuario(Long id) {
