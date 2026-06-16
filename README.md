@@ -111,7 +111,7 @@ Método de consulta personalizado:
 
 ```bash
 POST http://localhost:8081/api/v1/usuarios \
-  "Content-Type: application/json" \
+  
   '{
     "nombre": "Juan",
     "apellido": "Pérez",
