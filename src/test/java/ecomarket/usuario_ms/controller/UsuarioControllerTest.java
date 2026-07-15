@@ -37,7 +37,7 @@ public class UsuarioControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @SuppressWarnings("removal")
+    
     @MockitoBean
     private UsuarioService usuarioService;
 
